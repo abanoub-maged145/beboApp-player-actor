@@ -5,6 +5,7 @@ export interface Player {
   era: string;
   position: string;
   clubs: string;
+  currentClub?: string; // الفريق الحالي — للاعبين النشطين فقط
   goals: string;
   trophies: string;
   style: string;

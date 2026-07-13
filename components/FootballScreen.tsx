@@ -330,6 +330,15 @@ export default function FootballScreen({ onBack }: FootballScreenProps) {
                 value={player.trophies}
                 accent="#eab308"
               />
+              {player.active && player.currentClub && (
+                <div style={{ gridColumn: "1 / -1" }}>
+                  <Box
+                    label="⚽ الفريق الحالي"
+                    value={player.currentClub}
+                    accent="#4ade80"
+                  />
+                </div>
+              )}
             </div>
 
             <div
